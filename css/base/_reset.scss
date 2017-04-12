@@ -7,6 +7,9 @@ body {
   color: $black;
   background-color: #ffffff;
 }
+select,input,textarea:focus{
+  outline: none;
+}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: #c5c5c5;
 }
