@@ -1,0 +1,100 @@
+button:focus {outline:0;}
+.btn-submit{
+    display: none;
+    border: none;
+}
+.btn-pin{
+    position: relative;
+    float: right;
+    margin: 12px 12px 0 0;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 100%;
+    border: none;
+    background-color: $yellow;
+    &:before{
+        color: $white;
+        font-size: 20px;
+    }
+    .pin-count{
+        position: absolute;
+        top: -4px;
+        right: -6px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: $red;
+        color: $white;
+        line-height: initial;
+        border-radius: 100%;
+        font-size: $font-size-small;
+        font-weight: normal;
+    }
+}
+.btn-filter{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    &.btn-filter-right{
+        padding: 10px 15px 10px 10px;
+    }
+    &.btn-filter-left{
+        padding: 10px 10px 10px 15px;
+    }
+    .filter-count{
+        position: absolute;
+        top: -2px;
+        right: 0;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        background-color: $red;
+        color: $white;
+        font-weight: normal;
+    }
+}
+.btn-gone{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    padding: 0;
+    width: 90px;
+    height: 28px;
+    background-color: $white;
+    font-size: $font-size-small;
+    line-height: 28px;
+    color: $gray-dark;
+    border: 1px solid $gray;
+    border-radius: 2px;
+    &.btn-gone-left{
+        right: 110px;
+        &:before{
+            margin: 9px -5px 0 11px;
+        }
+        &.current:before{
+            margin: 9px 0 0 5px;
+            color: $orange;
+            font-weight: bold;
+        }
+    }
+    &:before{
+        float: left;
+        margin: 7px 0 0 5px;
+        color: $gray-light;
+        font-size: $font-size-base;
+    }
+    &.current:before{
+        margin: 7px 0 0 8px;
+        color: $orange;
+        font-weight: bold;
+    }
+    .gone-count{
+        -webkit-transform:scale(0.83); 
+        display:inline-block;
+    }
+}

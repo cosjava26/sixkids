@@ -1,0 +1,118 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.advanced-filter{
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    .btn-area{
+        display: inline-block;
+        background-color: $white;
+        color: $black;
+        font-size: $font-size-small;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 2px 4px;
+        border-radius: 80px;
+    }
+    .divider{
+        display: inline;
+        height: 100%;
+        border-left: 1px solid $black;
+    }
+}
+.select-area{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 10px;
+    select{
+        width: 50px;
+        height: 37px;
+        border: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+    }
+    &:before{
+        position: absolute;
+        right: 3px;
+        top: 11px;
+        font-size: $font-size-large;
+    }
+}
+.srh-rst{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: $white;
+    border-top: 2px solid $green;
+    .rst-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        span{
+            display: inline-block;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            line-height: 100px;
+            text-align: center;
+            img{
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .rst-title{
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        margin: 0;
+        max-height: 22px;
+        overflow: hidden;
+        font-size: $font-size-base;
+        color: $gray-darker;
+    }
+    .star-area{
+        position: absolute;
+        top: 30px;
+        left: 120px;
+        color: $star-color;
+        span:before{
+            font-size: $font-size-small;
+        }
+    }
+    .rst-attr{
+        position: absolute;
+        top: 55px;
+        left: 120px;
+        font-size: $font-size-small;
+        color: $gray-dark;
+    }
+    .rst-distance{
+        position: absolute;
+        top: 55px;
+        right: 10px;font-size: $font-size-small;
+        color: $gray;
+    }
+    .rst-attr-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        &:before{
+            color: $green;
+            font-size: 24px;
+        }
+    }
+}
