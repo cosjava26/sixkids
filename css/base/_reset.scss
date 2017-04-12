@@ -7,7 +7,7 @@ body {
   color: $black;
   background-color: #ffffff;
 }
-select,input,textarea:focus{
+select:focus,input:focus,textarea:focus{
   outline: none;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

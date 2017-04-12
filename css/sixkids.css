@@ -7,7 +7,7 @@ body {
   color: #333333;
   background-color: #ffffff; }
 
-select, input, textarea:focus {
+select:focus, input:focus, textarea:focus {
   outline: none; }
 
 ::-webkit-input-placeholder {
