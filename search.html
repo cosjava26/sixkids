@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>遛小孩-搜尋頁</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.2(pure-min.css+grids-responsive-old-ie-min.css+grids-responsive-min.css)">
+
+	<link rel="stylesheet" href="css/sixkids.css">
+</head>
+<body>
+	<header class="header-content">
+		<div class="header-main" style="display:none;">
+			<button class="icon icon-menu nav-toggle" onclick="openNavigation()"></button>
+			<div itemscope itemtype="http://schema.org/WebSite">
+				<meta itemprop="url" content="https://www.example.com/"/>
+				<form class="header-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+					<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+					<input class="header-input" placeholder="搜尋餐廳、景點、課程..." itemprop="query-input" type="text" name="search_term_string" required/>
+					<span class="icon icon-search"></span>
+					<button class="btn-submit" type="submit"></button>
+				</form>
+			</div>
+			<!-- <nav class="nav open" id="navigation">
+				<ul class="nav-menu">
+					<li class="nav-items"><a href="#" title="我想新增新地點" alt="我想新增新地點">我想新增新地點</a></li>
+					<li class="nav-items"><a href="#" title="粉絲專頁" alt="粉絲專頁">粉絲專頁</a></li>
+					<li class="nav-items"><a href="#" title="意見回饋" alt="意見回饋">意見回饋</a></li>
+				</ul>
+			</nav> -->
+			<button class="btn-pin" data-icon="c">
+				<span class="pin-count">5</span>
+			</button>
+		</div>
+		<div class="header-search">
+			<button class="icon icon-arrow-back nav-toggle" onclick="openNavigation()"></button>
+			<div itemscope itemtype="http://schema.org/WebSite">
+				<meta itemprop="url" content="https://www.example.com/"/>
+				<form class="header-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+					<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+					<input class="header-input" placeholder="搜尋餐廳、景點、課程..." itemprop="query-input" type="text" name="search_term_string" required/>
+					<span class="icon icon-search"></span>
+					<button class="btn-submit" type="submit"></button>
+				</form>
+			</div>
+			<!-- <nav class="nav open" id="navigation">
+				<ul class="nav-menu">
+					<li class="nav-items"><a href="#" title="我想新增新地點" alt="我想新增新地點">我想新增新地點</a></li>
+					<li class="nav-items"><a href="#" title="粉絲專頁" alt="粉絲專頁">粉絲專頁</a></li>
+					<li class="nav-items"><a href="#" title="意見回饋" alt="意見回饋">意見回饋</a></li>
+				</ul>
+			</nav> -->
+			<button class="btn-pin" data-icon="c">
+				<span class="pin-count">5</span>
+			</button>
+		</div>
+	</header>
+	<div class="keyword-rst">
+		<ul class="rst-record">
+			<li data-icon="l"><a href="#">木桌子咖啡店</a></li>
+			<li data-icon="l"><a href="#">室內游泳池</a></li>
+		</ul>
+		<ul class="rst-recommand">
+			<li class="rec-eat" data-icon="d"><a href="#">餐廳</a></li>
+			<li class="rec-view" data-icon="f"><a href="#">景點</a></li>
+			<li class="rec-activity" data-icon="e"><a href="#">課程</a></li>
+		</ul>
+	</div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXFdNdMNgel5nQHYi4FMRKmHXYqN5gG4Q&callback=initMap"
+    async defer></script>
+</body>
+</html>
