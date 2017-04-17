@@ -1,0 +1,74 @@
+.keyword-rst{
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-color: $gray-lighter;
+	.rst-record{
+		margin: 60px 0 0 0;
+		padding: 0;
+		background-color: $white;
+		li{
+			position: relative;
+			&:before{
+				position: absolute;
+			    top: 10px;
+			    left: 10px;
+				font-size: 24px;
+				color: $gray;
+			}
+			a{
+				display: inline-block;
+				margin: 0px 0 0 44px;
+				height: 40px;
+				min-width: 86%;
+    			line-height: 40px;
+				color: $gray-dark;
+				border-bottom: 1px solid $gray-light;
+				text-decoration: none;
+			}
+			&:last-child{
+				a{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+	.rst-recommand{
+		margin: 15px 0 0 0;
+		padding: 0;
+		background-color: $white;
+		li{
+			position: relative;
+			&:before{
+				position: absolute;
+			    top: 10px;
+			    left: 10px;
+				font-size: 24px;
+			}
+			a{
+				display: inline-block;
+				margin: 0px 0 0 44px;
+				height: 40px;
+				min-width: 86%;
+    			line-height: 40px;
+				color: $gray-dark;
+				text-decoration: none;
+			}
+			&:last-child{
+				a{
+					border-bottom: none;
+				}
+			}
+			&.rec-eat:before{
+				color: $red-light;
+			}
+			&.rec-view:before{
+				color: $green;
+			}
+			&.rec-activity:before{
+				color: $blue;
+			}
+		}
+
+	}
+}

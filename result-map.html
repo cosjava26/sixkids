@@ -12,26 +12,28 @@
 </head>
 <body  onload = "loadMap()">
 	<header class="header-content">
-		<button class="icon icon-menu nav-toggle" onclick="openNavigation()"></button>
-		<div itemscope itemtype="http://schema.org/WebSite">
-			<meta itemprop="url" content="https://www.example.com/"/>
-			<form class="header-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-				<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
-				<input class="header-input" placeholder="搜尋餐廳、景點、課程..." itemprop="query-input" type="text" name="search_term_string" required/>
-				<span class="icon icon-search"></span>
-				<button class="btn-submit" type="submit"></button>
-			</form>
+		<div class="header-main">
+			<button class="icon icon-menu nav-toggle" onclick="openNavigation()"></button>
+			<div itemscope itemtype="http://schema.org/WebSite">
+				<meta itemprop="url" content="https://www.example.com/"/>
+				<form class="header-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+					<meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+					<input class="header-input" placeholder="搜尋餐廳、景點、課程..." itemprop="query-input" type="text" name="search_term_string" required/>
+					<span class="icon icon-search"></span>
+					<button class="btn-submit" type="submit"></button>
+				</form>
+			</div>
+			<!-- <nav class="nav open" id="navigation">
+				<ul class="nav-menu">
+					<li class="nav-items"><a href="#" title="我想新增新地點" alt="我想新增新地點">我想新增新地點</a></li>
+					<li class="nav-items"><a href="#" title="粉絲專頁" alt="粉絲專頁">粉絲專頁</a></li>
+					<li class="nav-items"><a href="#" title="意見回饋" alt="意見回饋">意見回饋</a></li>
+				</ul>
+			</nav> -->
+			<button class="btn-pin" data-icon="c">
+				<span class="pin-count">5</span>
+			</button>
 		</div>
-		<!-- <nav class="nav open" id="navigation">
-			<ul class="nav-menu">
-				<li class="nav-items"><a href="#" title="我想新增新地點" alt="我想新增新地點">我想新增新地點</a></li>
-				<li class="nav-items"><a href="#" title="粉絲專頁" alt="粉絲專頁">粉絲專頁</a></li>
-				<li class="nav-items"><a href="#" title="意見回饋" alt="意見回饋">意見回饋</a></li>
-			</ul>
-		</nav> -->
-		<button class="btn-pin" data-icon="c">
-			<span class="pin-count">5</span>
-		</button>
 	</header>
 	<div class="advanced-filter">
 		<div class="btn-area">
@@ -70,7 +72,7 @@
 			<span class="icon icon-star"></span>
 			<span class="icon icon-star-half-o"></span>
 		</div>
-		<span class="rst-attr">公園</span>
+		<span class="rst-time">可以溜最多1.5小時</span>
 		<span class="rst-distance">12km</span>
 		<button type="button" class="btn-gone btn-gone-left" data-icon="g">去過<span class="gone-count">(211)</span></button>
 		<!-- <button type="button" class="btn-gone btn-gone-left current" data-icon="g">已去過<span class="gone-count">(211)</span></button> -->

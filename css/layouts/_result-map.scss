@@ -93,7 +93,7 @@ html, body {
             font-size: $font-size-small;
         }
     }
-    .rst-attr{
+    .rst-time{
         position: absolute;
         top: 55px;
         left: 120px;
@@ -114,5 +114,13 @@ html, body {
             color: $green;
             font-size: 24px;
         }
+    }
+}
+.srh-rst-list{
+    margin: 130px 0 0 0;
+    .list{
+        position: relative;
+        margin: 0 0 2px 0;
+        border-top: none;
     }
 }

@@ -5,7 +5,10 @@ body {
   font-weight: $font-weight;
   line-height: $line-height-base;
   color: $black;
-  background-color: #ffffff;
+  background-color: $gray-lighter;
+}
+ol, ul, li{
+  list-style: none
 }
 select:focus,input:focus,textarea:focus{
   outline: none;
