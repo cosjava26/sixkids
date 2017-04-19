@@ -278,7 +278,7 @@ html, body { height: 100%; margin: 0; padding: 0; }
 
 .advanced-filter-overlay .overlay-content .switch-list > li { position: relative; height: 40px; }
 
-.advanced-filter-overlay .overlay-content .switch-list > li .switch-text { position: relative; display: inline-block; padding: 11px 0 0 65px; color: #4d4d4d; }
+.advanced-filter-overlay .overlay-content .switch-list > li .switch-text { position: relative; display: inline-block; margin: 11px 0 0 65px; color: #4d4d4d; }
 
 .advanced-filter-overlay .overlay-content .switch-list > li .switch-text .reload-circle { position: absolute; top: 4px; right: -7px; display: inline-block; width: 8px; height: 8px; background-color: #E67325; border-radius: 8px; }
 
