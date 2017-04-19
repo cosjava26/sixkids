@@ -99,9 +99,12 @@ button:focus {outline:0;}
     }
 }
 .btn-delete{
-    float: right;
+    position: absolute;
+    right: 0;
     margin: 0;
     padding: 20px 15px 15px 0;
+    border: none;
+    background-color: transparent;
     font-size: $font-size-small;
     color: $orange;
 }
@@ -111,4 +114,147 @@ button:focus {outline:0;}
     width: 100%;
     border: none;
     background-color: $orange;
+    color: $white;
+    border-radius: 2px;
+}
+.btn-select-all{
+    float: right;
+    margin: 10px 10px 10px 0;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: $yellow;
+    line-height: normal;
+    color: $white;
+    font-size: $font-size-small;
+    &.check-all{
+        background-color: $gray-lightest;
+        color: #777;
+    }
+}
+.btn-clear-all{
+    float: right;
+    margin: 10px 15px 10px 0;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: $gray-lightest;
+    line-height: normal;
+    color: #777;
+    font-size: $font-size-small;
+    &.clear-all{
+        color: $star-color;
+    }
+}
+.btn-expand{
+    width: 100%;
+    padding: 10px 0;
+    border:none;
+    background-color: $gray-lightest;
+    color: $orange;
+}
+.control{
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    color: $gray-dark;
+    cursor: pointer;
+    input{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        top: 0;
+        left: 0;
+    }
+}
+.control-indicator{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #777;
+    border-radius: 2px;
+    .control:hover input~&,.control input:focus~&{
+        background-color: $gray-lighter;
+    }
+    .control input:checked~&{
+        background-color: $star-color;
+        border: 2px solid $star-color;
+    }
+    .control:hover input:not([disabled]):checked ~ &,.control input:checked:focus ~ &{
+        background-color: $star-color;
+        border: 2px solid $star-color;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        display: none;
+        .control input:checked~&{
+            display: block;
+        }
+        .control-checkbox &{
+            left: 5px;
+            top: 2px;
+            width: 5px;
+            height: 9px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+.material-switch{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    label{
+        cursor: pointer;
+        height: 0px;
+        position: relative;
+        width: 40px;
+        &:before{
+            content: '';
+            position: absolute;
+            margin-top: -8px;
+            width: 40px;
+            height: 16px;
+            background: rgba(34, 31, 31,26);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            opacity: 0.3;
+            transition: all 0.4s ease-in-out;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            margin-top: -8px;
+            width: 24px;
+            height: 24px;
+            background: rgb(241, 241, 241);
+            border-radius: 16px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            transition: left .3s ease,background .3s ease,box-shadow .1s ease;
+        }
+    }
+    input[type="checkbox"]{
+        display: none;
+        &:not(:disabled)~.label-switch:active:after{
+            box-shadow: 0 1px 3px 1px rgba(0,0,0,.5),0 0 0 15px rgba(0,0,0,.10);
+        }
+        &:checked + label::before{
+            background-color: $orange;
+            opacity: 0.5;
+        }
+        &:checked + label::after{
+            background: inherit;
+            left: 20px;
+        }
+    }
+    .label-switch{
+        background-color: $orange;
+    }
 }

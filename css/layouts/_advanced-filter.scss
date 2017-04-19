@@ -1,5 +1,6 @@
 .advanced-filter-overlay{
-	position: fixed;
+	visibility: hidden;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -8,13 +9,21 @@
 	z-index: 9999;
 	.overlay-header{
 		position: fixed;
+		top: 0;
 		width: 100%;
-		border-bottom: 1px solid $gray-light;
+		height: 55px;
+		z-index: 20;
+		background-color: $white;
+		border-bottom: 1px solid $gray-lighter;
 	}
 	.icon-close{
-		float: left;
+		position: absolute;
+		top: 0;
 		margin: 0;
 		padding: 15px 15px 11px 15px;
+		border: none;
+		background-color: transparent;
+		z-index: 10;
 		&:before{
 			font-size: 25px;
 			color: $gray-dark;
@@ -31,12 +40,72 @@
     	font-weight: bold;
     	color: $gray-dark;
 	}
+	.overlay-content{
+		padding: 55px 0 60px 0;
+		height: 100%;
+    	overflow-y: auto;
+    	background-color: $white;
+    	.select-title{
+    		height: 48px;
+    		line-height: 48px;
+    		border-bottom: 1px solid $gray-lighter;
+    		.title-attr{
+    			float: left;
+    			display: inline-block;
+    			margin: 0 0 0 15px;
+    			color: $gray-dark;
+    			font-size: $font-size-base;
+    			font-weight: bold;
+    		}
+    	}
+    	.check-list{
+    		margin: 0;
+    		padding: 0 15px;
+    		border-bottom: 1px solid $gray-lighter;
+    		>li{
+    			height: 40px;
+    			line-height: 40px;
+    			.check-items{
+    				display: inline-block;
+    			}
+    			&.hide{
+    				display: none;
+    			}
+    		}
+    	}
+    	.switch-list{
+    		margin: 10px 0;
+    		padding: 0;
+    		>li{
+    			position: relative;
+    			height: 40px;
+    			.switch-text{
+    				position: relative;
+    				display: inline-block;
+    				padding: 11px 0 0 65px;
+    				color: $gray-dark;
+    				.reload-circle{
+    					position: absolute;
+    					top: 4px;
+    					right: -7px;
+    					display: inline-block;
+    					width: 8px;
+    					height: 8px;
+    					background-color: $orange;
+    					border-radius: 8px;
+    				}
+    			}
+    		}
+    	}
+	}
 	.overlay-footer{
 		position: fixed;
 		bottom: 0;
 		right: 0;
 		left: 0;
+		z-index: 2;
 		padding: 10px;
-		border-top: 1px solid $gray-light;
+		border-top: 1px solid $gray-lighter;
+		background-color: $white;
 	}
 }
