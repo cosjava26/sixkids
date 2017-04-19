@@ -107,6 +107,7 @@ button:focus {outline:0;}
     background-color: transparent;
     font-size: $font-size-small;
     color: $orange;
+    z-index: 10;
 }
 .btn-submit-filter{
     margin: 0;
