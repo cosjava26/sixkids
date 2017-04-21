@@ -18,7 +18,7 @@ select:focus, input:focus, textarea:focus { outline: none; }
 
 [data-icon]:before { font-family: "sixkids" !important; content: attr(data-icon); font-style: normal !important; font-weight: normal; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "sixkids" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "sixkids" !important; font-style: normal !important; font-weight: normal; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon-menu:before { content: "\61"; }
 
@@ -76,7 +76,7 @@ button:focus { outline: 0; }
 
 .btn-submit { display: none; border: none; }
 
-.btn-pin { position: relative; float: right; margin: 12px 12px 0 0; padding: 0; width: 36px; height: 36px; line-height: 42px; text-align: center; border-radius: 100%; border: none; background-color: #FFC759; }
+.btn-pin { position: absolute; right: 0; margin: 12px 12px 0 0; padding: 0; width: 36px; height: 36px; z-index: 1; line-height: 42px; text-align: center; border-radius: 100%; border: none; background-color: #FFC759; }
 
 .btn-pin:before { color: #ffffff; font-size: 20px; }
 
@@ -106,7 +106,7 @@ button:focus { outline: 0; }
 
 .btn-delete { position: absolute; right: 0; margin: 0; padding: 20px 15px 15px 0; border: none; background-color: transparent; font-size: 12px; color: #E67325; z-index: 10; }
 
-.btn-submit-filter { margin: 0; padding: 10px 0; width: 100%; border: none; background-color: #E67325; color: #ffffff; border-radius: 2px; }
+.btn-submit-filter { margin: 0; padding: 10px 0; width: 100%; border: none; background-color: #E67325; color: #ffffff; border-radius: 2px; font-size: 16px; font-weight: bold; }
 
 .btn-select-all { float: right; margin: 10px 10px 10px 0; padding: 6px 10px; border-radius: 2px; border: none; background-color: #FFC759; line-height: normal; color: #ffffff; font-size: 12px; }
 
@@ -117,6 +117,8 @@ button:focus { outline: 0; }
 .btn-clear-all.clear-all { color: #F8931E; }
 
 .btn-expand { width: 100%; padding: 10px 0; border: none; background-color: #f4f4f4; color: #E67325; }
+
+.btn-logout { position: absolute; right: 0; bottom: 0px; padding: 10px; border: none; background-color: transparent; line-height: normal; color: #ffffff; }
 
 .control { position: relative; display: block; padding-left: 25px; color: #4d4d4d; cursor: pointer; }
 
@@ -156,7 +158,7 @@ button:focus { outline: 0; }
 
 .header-content { position: fixed; top: 0; width: 100%; height: 60px; z-index: 5; background-color: #53BFA1; box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px; }
 
-.nav-toggle { position: relative; float: left; padding: 0; margin: 8px 0; width: 44px; height: 44px; border: 0; background-color: transparent; }
+.nav-toggle { position: absolute; padding: 0; margin: 8px 0; width: 44px; height: 44px; z-index: 1; border: 0; background-color: transparent; }
 
 .nav-toggle:before { position: absolute; top: 8px; left: 8px; font-size: 30px; color: #ffffff; }
 
@@ -166,9 +168,45 @@ button:focus { outline: 0; }
 
 .header-form .icon-search:before { position: absolute; right: 18px; top: 9px; font-size: 28px; color: #53BFA1; }
 
-.logo { position: absolute; left: 0; right: 0; text-align: center; }
+.logo { position: absolute; left: 0; width: 100%; text-align: center; }
 
 .logo img { margin: 10px 0 0 0; width: 150px; }
+
+.nav-open { overflow: hidden; height: 100%; }
+
+.nav { display: none; left: -240px; width: 100%; }
+
+.nav.open { position: absolute; display: block; height: 100vh; background: rgba(74, 74, 74, 0.7); top: 0; left: 0; right: 0; z-index: 1055; }
+
+.nav .nav-menu { margin: 0; padding: 0; width: 240px; height: 100vh; background: #ffffff; box-shadow: 0 9px 18px rgba(0, 0, 0, 0.18); }
+
+.nav .nav-menu .user-item { position: relative; height: 120px; background-color: #367C69; text-align: center; line-height: 120px; }
+
+.nav .nav-menu .user-item a.user-login { float: left; display: inline-block; margin: 50px 10px 0 10px; width: 220px; height: 40px; line-height: normal; text-decoration: none; color: #ffffff; }
+
+.nav .nav-menu .user-item a.user-login:before { float: left; margin: -3px -10px 0 0; font-size: 24px; }
+
+.nav .nav-menu .user-item a.user-login .login { float: right; display: inline-block; margin: -7px 8px 0 0px; padding: 4px 8px; background-color: #ffffff; color: #367C69; font-size: 16px; font-weight: bold; border-radius: 5px; }
+
+.nav .nav-menu .user-item a.user-info { float: left; display: inline-block; margin: 20px 0 0 0; width: 240px; height: 60px; }
+
+.nav .nav-menu .user-item a.user-info .user-img { float: left; display: inline-block; margin: 0 10px; width: 55px; height: 55px; overflow: hidden; border-radius: 55px; line-height: 55px; }
+
+.nav .nav-menu .user-item a.user-info .user-img img { max-width: 100%; }
+
+.nav .nav-menu .user-item a.user-info .user-name { float: left; display: block; margin: 8px 0 0 0; width: 155px; max-height: 21px; overflow: hidden; text-align: left; line-height: normal; font-size: 16px; font-weight: bold; color: #ffffff; }
+
+.nav .nav-menu .user-item a.user-info .user-record { float: left; display: block; margin: 3px 0 0 0; width: 155px; line-height: normal; color: #ffffff; text-align: left; font-size: 12px; }
+
+.nav .nav-menu .nav-items { height: 48px; }
+
+.nav .nav-menu .nav-items a { display: inline-block; padding: 0 10px; width: 220px; height: 48px; text-decoration: none; line-height: 48px; color: #4d4d4d; }
+
+.nav .nav-menu .nav-items a.icon-map-add:before { float: left; margin: 12px 5px 0 0; font-size: 24px; color: #DC5966; }
+
+.nav .nav-menu .nav-items a.icon-fb:before { float: left; margin: 12px 5px 0 0; font-size: 24px; color: #32579D; }
+
+.nav .nav-menu .nav-items a.icon-feeback:before { float: left; margin: 12px 5px 0 0; font-size: 24px; color: #53BFA1; }
 
 /* Always set the map height explicitly to define the size of the div element that contains the map. */
 #map { height: 100%; }
@@ -176,7 +214,7 @@ button:focus { outline: 0; }
 /* Optional: Makes the sample page fill the window. */
 html, body { height: 100%; margin: 0; padding: 0; }
 
-.advanced-filter { position: fixed; top: 75px; width: 100%; z-index: 100; text-align: center; }
+.advanced-filter { position: fixed; top: 75px; width: 100%; z-index: 3; text-align: center; }
 
 .advanced-filter.hide { display: none; }
 

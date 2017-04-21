@@ -4,12 +4,13 @@ button:focus {outline:0;}
     border: none;
 }
 .btn-pin{
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 0;
     margin: 12px 12px 0 0;
     padding: 0;
     width: 36px;
     height: 36px;
+    z-index: 1;
     line-height: 42px;
     text-align: center;
     border-radius: 100%;
@@ -117,6 +118,8 @@ button:focus {outline:0;}
     background-color: $orange;
     color: $white;
     border-radius: 2px;
+    font-size: $font-size-large;
+    font-weight: bold;
 }
 .btn-select-all{
     float: right;
@@ -153,6 +156,16 @@ button:focus {outline:0;}
     border:none;
     background-color: $gray-lightest;
     color: $orange;
+}
+.btn-logout{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    line-height: normal;
+    color: $white;
 }
 .control{
     position: relative;

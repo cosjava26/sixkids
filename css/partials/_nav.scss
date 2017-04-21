@@ -1,0 +1,134 @@
+.nav-open{
+	overflow: hidden;
+    height: 100%;
+}
+.nav{
+	display: none;
+	left: -240px;
+	width: 100%;
+	&.open{
+		position: absolute;
+	    display: block;
+	    height: 100vh;
+	    background: rgba(74, 74, 74, 0.7);
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 1055;
+	}
+	.nav-menu{
+		margin: 0;
+		padding: 0;
+		width: 240px;
+	    height: 100vh;
+	    background: $white;
+	    box-shadow: 0 9px 18px rgba(0,0,0,0.18);
+	    .user-item{
+	    	position: relative;
+	    	height: 120px;
+			background-color: #367C69;
+			text-align: center;
+			line-height: 120px;
+			a.user-login{
+				float: left;
+				display: inline-block;
+    			margin: 50px 10px 0 10px;
+    			width: 220px;
+				height: 40px;
+				line-height: normal;
+				text-decoration: none;
+				color: $white;
+				&:before{
+					float: left;
+					margin: -3px -10px 0 0;
+					font-size: 24px;
+				}
+				.login{
+					float: right;
+					display: inline-block;
+					margin: -7px 8px 0 0px;
+					padding: 4px 8px;
+					background-color: $white;
+					color: #367C69;
+					font-size: $font-size-large;
+					font-weight: bold;
+					border-radius: 5px;
+				}
+			}
+			a.user-info{
+				float: left;
+				display: inline-block;
+				margin: 20px 0 0 0;
+				width: 240px;
+				height: 60px;
+				.user-img{
+					float: left;
+					display: inline-block;
+					margin: 0 10px;
+					width: 55px;
+					height: 55px;
+					overflow: hidden;
+					border-radius: 55px;
+					line-height: 55px;
+					img{
+						max-width: 100%;
+					}
+				}
+				.user-name{
+					float: left;
+					display: block;
+					margin: 8px 0 0 0;
+    				width: 155px;
+    				max-height: 21px;
+    				overflow: hidden;
+    				text-align: left;
+					line-height: normal;
+					font-size: $font-size-large;
+					font-weight: bold;
+					color: $white;
+				}
+				.user-record{
+					float: left;
+					display: block;
+					margin: 3px 0 0 0;
+    				width: 155px;
+					line-height: normal;
+					color: $white;
+					text-align: left;
+					font-size: $font-size-small;
+				}
+			}
+
+	    }
+	    .nav-items{
+	    	height: 48px;
+	    	a{
+	    		display: inline-block;
+	    		padding: 0 10px;
+	    		width: 220px;
+	    		height: 48px;
+	    		text-decoration: none;
+	    		line-height: 48px;
+	    		color: $gray-dark;
+	    		&.icon-map-add:before{
+	    			float: left;
+    				margin: 12px 5px 0 0;
+	    			font-size: 24px;
+	    			color: $red-light;
+	    		}
+	    		&.icon-fb:before{
+	    			float: left;
+    				margin: 12px 5px 0 0;
+	    			font-size: 24px;
+	    			color: #32579D;
+	    		}
+	    		&.icon-feeback:before{
+	    			float: left;
+    				margin: 12px 5px 0 0;
+	    			font-size: 24px;
+	    			color: #53BFA1;
+	    		}
+	    	}
+	    }
+	}
+}
