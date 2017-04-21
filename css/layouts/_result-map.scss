@@ -77,6 +77,17 @@ html, body {
             }
         }
     }
+    .add-time{
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        display: inline-block;
+        max-width: 50%;
+        max-height: 17px;
+        overflow: hidden;
+        color: #777;
+        font-size: $font-size-small;
+    }
     .rst-title{
         position: absolute;
         top: 10px;
