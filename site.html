@@ -3,18 +3,297 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta name="theme-color" content="#53bfa1">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<title>遛小孩-地點內頁</title>
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.2(pure-min.css+grids-responsive-old-ie-min.css+grids-responsive-min.css)">
 		<link rel="stylesheet" href="css/sixkids.css">
 	</head>
-	<body>
-		<header class="header-content">
-			<button class="icon icon-arrow-back"></button>
-			<button class="icon icon-share"></button>
+	<body class="mobile-width">
+		<header class="header-content site-header">
+			<button class="icon icon-arrow-back left-btn"></button>
+			<h1>大安森林公園大安森林公園大安森林公園</h1>
+			<button class="icon icon-share right-btn"></button>
 		</header>
-		<img src="https://lh3.ggpht.com/-Y4Oejugr2BQ/WPY0t4Ym-oI/AAAAAAABfmc/iu1GY2G-T_shhmMjRAbBGoTH-gB_1oozgCLIB/s512/photo" alt="大安森林公園" width="100%">
+		<div class="site-content">
+			<div class="site-img-bg default-img">
+				<img src="http://i.imgur.com/jSppSxj.jpg" alt="大安森林公園" width="100%">
+			</div>
+			<a href="#" class="site-header-directions-btn icon icon-nav"></a>
+			<a href="tel:+886-2-27003830" class="site-header-directions-btn icon icon-phone"></a>
+			
+			<section class="site-header-description">
+				<h2 class="site-title" id="header">大安森林公園</h2>
+				<span class="review-gray-color">xxxsigjguj02345提供</span>
+				<div class="star-area">
+					<span class="review-primany-color icon icon-star"></span>
+					<span class="review-primany-color icon icon-star"></span>
+					<span class="review-primany-color icon icon-star"></span>
+					<span class="review-primany-color icon icon-star-half-o"></span>
+					<span class="review-gray-color icon icon-star-o"></span>
+				</div>
+				<span class="review-gray-color">景點</span>
+				<button type="button" class="btn-gone btn-gone-left" data-icon="g">去過<span class="gone-count">(211)</span></button>
+				<button type="button" class="btn-gone" data-icon="c">我想去<span class="gone-count">(222)</span></button>
+			</section>
+			<section class="clearfix">
+				<ul class="site-info-list">
+					<li class="icon icon-map">106台北市大安區新生南路二段1號</li>
+					<li class="icon icon-android-time">營業中：24小時營業</li>
+					<li class="icon icon-phone"><a href="tel:+886-2-27003830" class="tel-link">02 2700 3830</a></li>
+					<li class="icon icon-eat">餐點評價：4.5分  唉喲～不錯唷！</li>
+					<li class="icon icon-money">人均價格：$200-$5,000</li>
+					<li class="icon icon-kid">適合0-2歲</li>
+					<li class="icon icon-time">課程時間：1~2小時</li>
+				</ul>
+				<span class="info-box">須事先預約</span>
+				<span class="info-box">附近可停車</span>
+				<span class="info-box">附設停車場</span>
+			</section>
+			<section>
+				<button class="icon icon-edit site-edit-btn">提出修改建議</button>
+				<div id="mymap"></div> 
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14460.193185978582!2d121.5349054!3d25.032435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9803a65369f%3A0x61fb21e8f586e51f!2z5aSn5a6J5YWs5ZyS!5e0!3m2!1szh-TW!2s!4v1492577979906" width="100%" height="160" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+			</section>
+			<section class="review-form">
+				<!-- <div class="review-form"> -->
+					<h3>留言與評分</h3>
+					<div class="site-reviewchart clearfix">
+						<span class="site-star-display">4.5</span>
+						<div class="star-area">
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star-half-o"></span>
+						</div>
+						<span class="site-reviewchart-numreviews">333篇評論</span>
+					</div>
+					<span class="review-info">向大家分享你的經驗吧！</span>
+					<div class="stars">
+						<form action="">
+							<input class="star star-5" id="star-5" type="radio" name="star"/>
+						  <label class="star star-5" for="star-5"></label>
+							<input class="star star-4" id="star-4" type="radio" name="star"/>
+							<label class="star star-4" for="star-4"></label>
+							<input class="star star-3" id="star-3" type="radio" name="star"/>
+							<label class="star star-3" for="star-3"></label>
+							<input class="star star-2" id="star-2" type="radio" name="star"/>
+							<label class="star star-2" for="star-2"></label>
+							<input class="star star-1" id="star-1" type="radio" name="star"/>
+							<label class="star star-1" for="star-1"></label>
+						</form>
+					</div>
+					<textarea rows="1" class="review-text" placeholder="我覺得這裡..." tabindex="1" style="resize: none;width:100%;"></textarea>
+					<button class="submit-btn">送出</button>
+				<!-- </div> -->
+			</section>
+			<section class="section-review-listbox clearfix">
+				<div class="site-review-container">
+					<div class="member-head-img">
+						<img src="https://c.disquscdn.com/uploads/users/17416/2557/avatar92.jpg?1487588796" alt="頭像">
+					</div>
+					<aside>
+						<h5 class="member-name">蔡小潔的老媽</h5>
+						<span class="">567筆評論</span>
+						<div class="star-area">
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star-half-o"></span>
+							<span class="review-time">5個月前</span>
+						</div>
+						<p>有非常多的樹蔭可以乘涼，野餐！旁邊還有兒童遊樂設施與乾淨的沙坑可以讓小孩盡情的玩與奔跑～不過自己要準備垃圾袋，垃圾不落地</p>
+					</aside>
+				</div>
+				<div class="site-review-container">
+					<div class="member-head-img">
+					</div>
+					<aside>
+						<h5 class="member-name">老媽</h5>
+						<span class="">567筆評論</span>
+						<div class="star-area">
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star-half-o"></span>
+							<span class="review-time">5個月前</span>
+						</div>
+						<p>有非常多的樹蔭可以乘涼，野餐！旁邊還有兒童遊樂設施與乾淨的沙坑可以讓小孩盡情的玩與奔跑～不過自己要準備垃圾袋，垃圾不落地</p>
+					</aside>
+				</div>
+				<div class="site-review-container">
+					<div class="member-head-img">
+					</div>
+					<aside>
+						<h5 class="member-name">老媽</h5>
+						<span class="">567筆評論</span>
+						<div class="star-area">
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star-half-o"></span>
+							<span class="review-time">5個月前</span>
+						</div>
+						<p>有非常多的樹蔭可以乘涼，野餐！旁邊還有兒童遊樂設施與乾淨的沙坑可以讓小孩盡情的玩與奔跑～不過自己要準備垃圾袋，垃圾不落地</p>
+					</aside>
+				</div>
+				<button class="btn-expand">展開全部</button>
+			</section>
+			<section class="section-review-listbox clearfix">
+				<h3>你的評論</h3>
+				<div class="site-review-container myreview">
+					<div class="member-head-img">
+						<img src="https://c.disquscdn.com/uploads/users/17416/2557/avatar92.jpg?1487588796" alt="頭像">
+					</div>
+					<aside>
+						<h5 class="member-name">testadmin234</h5>
+						<div class="star-area">
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star"></span>
+							<span class="review-primany-color icon icon-star-half-o"></span>
+							<span class="review-time">5個月前</span>
+						</div>
+						<p>有非常多的樹蔭可以乘涼，野餐！旁邊還有兒童遊樂設施與乾淨的沙坑可以讓小孩盡情的玩與奔跑～不過自己要準備垃圾袋，垃圾不落地</p>
+					</aside>
+				</div>
 
+			</section>
+		</div>
+		<ul class="site-related-list clearfix">
+					<li>
+						<a href="#">
+							<div class="related-list-img" style="background-image: url(http://i.imgur.com/jSppSxj.jpg) ;">
+							</div>
+							<h5>國立國父紀念館</h5>
+							<span>景點</span>
+							<div class="star-area">
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star-half-o"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="related-list-img" style="background-image: url(http://i.imgur.com/jSppSxj.jpg) ;">
+							</div>
+							<h5>國立國父紀念館</h5>
+							<span>景點</span>
+							<div class="star-area">
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star-half-o"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="related-list-img" style="background-image: url(http://i.imgur.com/jSppSxj.jpg) ;">
+							</div>
+							<h5>國立國父紀念館</h5>
+							<span>景點</span>
+							<div class="star-area">
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star-half-o"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="related-list-img" style="background-image: url(http://i.imgur.com/jSppSxj.jpg) ;">
+							</div>
+							<h5>國立國父紀念館</h5>
+							<span>景點</span>
+							<div class="star-area">
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star-half-o"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="related-list-img default-img">
+							</div>
+							<h5>國立國父紀念館</h5>
+							<span>景點</span>
+							<div class="star-area">
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star"></span>
+								<span class="icon icon-star-half-o"></span>
+							</div>
+						</a>
+					</li>
+			</ul>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- sticky-header -->
+			<script>
+		    $(function() {
+		            var $window = $(window),
+		                $stickyheader = $('#header'),
+		                // 取得header的預設位置
+		                headerOffsetTop = $stickyheader.offset().top;
+
+		            // 監控視窗捲動事件
+		            // (每次視窗觸發捲動事件時執行處理)
+		            $window.on('scroll', function() {
+		                // 檢查視窗捲動程度、
+		                // 若超過header的預設位置則附加類別、
+		                // 反之則刪除
+
+		                if ($window.scrollTop() > 30) {
+		                	$('.site-header').addClass('sticky');
+
+		                } else {
+		                  $('.site-header').removeClass('sticky');
+		                }
+		                if ($window.scrollTop() > headerOffsetTop) {
+		                	$('.site-header').find('h1').css('visibility','visible');
+
+		                } else {
+		                  $('.site-header').find('h1').css('visibility','hidden');
+		                }
+		            });
+		    });
+	    </script>
+			<script>
+
+	      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+	      // Australia.
+	      function initMap() {
+	        var map = new google.maps.Map(document.getElementById('mymap'), {
+	          zoom: 13,
+	          center: {lat: 25.029344, lng: 121.536010}
+	        });
+
+	        var image = 'images/view-spot.png';
+	        var beachMarker = new google.maps.Marker({
+	          position: {lat: 25.029344, lng: 121.536010},
+	          map: map,
+	          icon: image
+	        });
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ttZkJePk8vWXjuZV--xD79R0ptgpmg4&callback=initMap">
+	    </script>
 	</body>
 </html>

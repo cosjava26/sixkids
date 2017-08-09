@@ -1,0 +1,418 @@
+.site-header {
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+	box-sizing: border-box;
+	box-shadow: none;
+	transition: all 0.8s ease-in-out;
+	display: flex;
+
+	h1 {
+		// display: inline-block;
+		color: white;
+		visibility: hidden;
+		font-size: 1.5em;
+		// margin-left: 60px;
+		// line-height: 60px;
+		min-width: 210px;
+		height: 30px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: 80%; 
+		// justify-content: flex-start;
+
+	}
+	button {
+		color: $white;
+		font-size: 26px;
+		background: none;
+		border: none;
+		width: 60px;
+		height: 60px;
+		padding: 0;
+		box-sizing: border-box;
+		display: flex;
+	    width: 100%;
+	    flex-shrink: 5;
+	    max-width: 60px;
+		// line-height: 60px;
+		&:before {
+			vertical-align: middle;
+			margin: 0 auto;
+		}
+	}
+	.left-btn {
+		// position: absolute;
+		// left: 0;
+		// top: 0;
+
+	}
+	.right-btn {
+		// position: absolute;
+		// right: 0;
+		// top: 0;
+	}
+
+}
+
+.site-content {
+	background: white;
+	color: $gray-darker;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+
+	h3 {
+		text-align: center;
+	}
+
+	section {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #eee;
+	}
+
+	a.tel-link {
+		text-decoration: none;
+		color: $black;
+	}
+
+	.site-title {
+		white-space: nowrap;
+		margin: 0;
+		width: 100%;
+		height: 30px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.star-area {
+		margin: 5px 0;
+	}
+	.site-header-description {
+		position: relative;
+	}
+	.site-info-list {
+		margin: 0 0 10px;
+		padding: 0;
+		li {
+			padding: 10px 0 10px 35px;
+			&:before {
+				font-size: 25px;
+				color: $green;
+				margin-right: 10px;
+				vertical-align: middle;
+				margin-left: -35px;
+			}
+		}
+	}
+	span.info-box {
+		padding: 2px 8px;
+		border: 1px solid $gray;
+		border-radius: 2px;
+		font-size: 12px;
+	}
+
+	.site-reviewchart {
+		margin: 10px auto;
+		width: 170px;
+		
+		.site-star-display {
+			color: $orange;
+			font-size: 42px;
+			float: left;
+			padding-right: 5px;
+			margin-top: -6px;
+			letter-spacing: 2px;
+		}
+		.star-area {
+			margin-top: -5px;
+
+		}
+		.site-reviewchart-numreviews {
+			color: $gray;
+		}
+	}
+
+	.review-form {
+		.review-info {
+			text-align: center;
+			display: block;
+		}
+		.review-text {
+			resize:none;
+			width: 100%;
+			height: 90px;
+			padding: 8px 10px;
+			border: 1px solid $gray-light;
+			border-radius: 2px;
+			box-sizing: border-box;
+			background: $gray-lighter;
+			-webkit-appearance: none;
+		}
+		.submit-btn {
+			padding: 6px 20px;
+			background: $green;
+			color: $white;
+			border-radius: 2px;
+			border: none;
+			margin: 10px auto 15px;
+			display: block;
+			min-width: 100px;
+		}
+	}
+	.section-review-listbox {
+		padding: 0;
+		position: relative;
+		padding-bottom: 28px;
+	}
+	.site-review-container {
+		margin-bottom: 10px;
+		padding: 0 15px;
+
+		aside {
+			margin-left: 50px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $gray-light;
+
+			h5 {
+				font-size: 14px;
+				font-weight: normal;
+				margin: 2px auto;
+
+			}
+			> span {
+				color: $gray;
+				font-size: 12px;
+			}
+
+			p {
+				font-size: 12px;
+				margin: 2px auto;
+			}
+
+			.review-time {
+				font-size: 12px;
+				color: $gray;
+				padding-top: 2px;
+				padding-left: 2px;
+			}
+			.star-area {
+				font-size: 12px;
+
+			}
+		}
+	}
+	.myreview {
+		aside {
+			border-bottom: none;
+		}
+	}
+	.btn-expand {
+		position: absolute;
+		bottom: 0;
+	} 
+}
+
+.site-related-list {
+	width: 100%;
+	padding: 0 15px 20px;
+	margin: 0; 
+	box-sizing: border-box;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	li {
+		width: 49%;
+		overflow: hidden;
+		height: 192px;
+		position: relative;
+		float: left;
+		margin-bottom: 10px;
+		background: $white;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+
+		&:nth-child(even) {
+			float: right;
+			margin-right: 0;
+		}
+
+		.related-list-img {
+			width: 100%;
+			height: 110px;
+			background-position: center;
+			background-size: cover;
+		}
+		h5, span, .star-area {
+			margin: 0; 
+			padding: 0 5px;
+		}
+		h5 {
+			margin-top: 5px;
+			font-weight: normal;
+			height: 34px;
+			overflow: hidden;
+			width: 100%;
+			text-overflow: ellipsis;
+			box-sizing: border-box;
+		}
+		span {
+			font-size: 12px;
+			color: $gray;
+		}
+		.star-area span {
+			color: $star-color;
+			padding: 0;
+		}
+	}
+}
+
+.site-header-directions-btn {
+	position: relative;
+	width: 56px;
+	height: 56px;
+	box-sizing: border-box;
+	margin: -28px 10px 0 5px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #53bfa1;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+	transition: box-shadow 150ms cubic-bezier(.4,0,1,1);
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+	border: none;
+	float: right;
+	z-index: 4;
+	line-height: 44px;
+
+}
+.site-header-directions-btn:before {
+	padding: 5px;
+}
+
+.member-head-img {
+	position: relative;
+	z-index: 3;
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	&:after {
+		font-family: "sixkids";
+		content: "\7a";
+		color: $green;
+	    font-size: 49px;
+	    margin-top: -14.2px;
+	    margin-left: -4.3px;
+	    position: absolute;
+	}
+	img {
+		position: absolute;
+		z-index: 2;
+		width: 40px;
+
+	}
+}
+
+.site-img-bg {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	img {
+		vertical-align: middle;
+		min-height: 100%;
+	}
+}
+
+.site-edit-btn {
+	padding: 8px 8px;
+	background: $green;
+	color: $white;
+	border-radius: 2px;
+	border: none;
+	margin: 20px auto 25px;
+	display: block;
+	&:before {
+		padding-right: 5px;
+	}
+}
+
+.review-primany-color {
+	color: $star-color;	
+}
+
+.review-gray-color {
+	color: $gray;
+}
+
+#mymap {
+    width: 100%;
+    height: 160px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.stars {
+	width: 280px;
+	margin: 0 auto;
+	display: block;
+	font-family: "sixkids";
+
+	input.star {
+		display: none;
+
+		&:checked ~ label.star:before {
+			content:"\68";
+			color: $star-color;
+			transition: all .15s;
+
+		}
+	}
+
+	label.star {
+		float: right;
+		padding: 10px;
+		font-size: 36px;
+		color: $gray-light;
+		transition: all .25s;
+
+		&:before {
+			content: "\6a";
+		}
+
+	}
+
+	input.star-5::checked ~ label.star:before {
+		color: #FE7;
+		text-shadow: 0 0 20px #952;
+	}
+
+	input.star-1:checked ~ label.star:before { 
+		color: #F62; 
+	}
+
+}
+
+.sticky {
+	background: $green;
+}
+
+.seeit {
+	visibility: visible;
+}
+
+.mobile-width {
+	margin: 0 auto;
+	max-width: 480px;
+	.header-content {
+		max-width: 480px;
+	}
+}
+

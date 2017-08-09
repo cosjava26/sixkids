@@ -50,6 +50,14 @@ html, body {
         top: 11px;
         font-size: $font-size-large;
     }
+    &.location{
+        &:before{
+            right: 1px;
+        }
+        select{
+            width: 55px;
+        }
+    }
 }
 .srh-rst{
     position: fixed;
