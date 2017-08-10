@@ -5,7 +5,7 @@ https://cosjava26.github.io/sixkids/index.html
 
 ## 網站流程：
 <p align="center">
-  <img src="http://i.imgur.com/4PG8444.png">
+  <img src="http://i.imgur.com/5KYm4dI.png">
 </p>
 
 ### 情境分析＋訪談：
@@ -26,6 +26,11 @@ https://cosjava26.github.io/sixkids/index.html
 
       在下圖中，如果拉一次資料，一次將所有的地點資料(如下圖中地點名稱、照片、距離...等等)＋會員資料(如下圖中的"去過"及"想去..") 一次拉完，網頁速度就明顯會過慢。
       
-      考慮這些因素，所以才用先拉地點資料，再拉會員資料來優化，網頁速度才會變快，使用體驗才會更好。
+      ![情境結果頁](http://i.imgur.com/Gbo08i1.png)
+      
+      考慮這些因素，將原本的網站流程修改後(如下圖)，(1)先拉地點資料，(2)再拉後台會員資料來優化，網頁速度才會變快，使用體驗才會更好。
+      
+<p align="center">
+  <img src="http://i.imgur.com/PMH09Pf.png">
+</p>
 
-![情境結果頁](http://i.imgur.com/Gbo08i1.png)
