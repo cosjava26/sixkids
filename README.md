@@ -16,5 +16,9 @@ https://cosjava26.github.io/sixkids/index.html
 
 ### UI/UX+技術：
 1. 第一版上線後，發現首頁用Facebook登入，折損率很高。
+
+![首頁](http://i.imgur.com/aB9s1pC.png)
+
 2. 依照使用情境選擇後，當資料量一大，網頁速度會過慢。
 
+![情境結果頁](http://i.imgur.com/cPS1tP8.png)
