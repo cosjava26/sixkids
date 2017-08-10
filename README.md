@@ -20,7 +20,7 @@ https://cosjava26.github.io/sixkids/index.html
 
     一開始的設計就用情境(地點/目的)來分，希望要綁會員，所以一開始的設計就首頁 Facebook 要登入，不登入也能用，後來發現折損率很高(Facebook 登入 100 個只剩３成)。
 
-![首頁](http://i.imgur.com/rzl5572.png)
+![首頁](http://i.imgur.com/xhMgCYC.png)
 
 2. 依照使用情境選擇後，當資料量一大，網頁速度會過慢。
 
@@ -28,4 +28,4 @@ https://cosjava26.github.io/sixkids/index.html
       
       所以要分二次拉資料，先拉地點資料，再拉會員資料，網頁速度才會變快，使用體驗才會更好。
 
-![情境結果頁](http://i.imgur.com/cPS1tP8.png)
+![情境結果頁](http://i.imgur.com/Ncjbkce.png)
